@@ -1,0 +1,11 @@
+--- origsrc/soundtouch/source/SoundTouch/Makefile.am	2015-11-24 12:18:43.032948600 -0600
++++ src/soundtouch/source/SoundTouch/Makefile.am	2015-11-24 12:23:22.717464000 -0600
+@@ -67,7 +67,7 @@ libSoundTouchSSE_la_CXXFLAGS = $(AM_CXXF
+ endif
+ 
+ # Modify the default 0.0.0 to LIB_SONAME.0.0
+-libSoundTouch_la_LDFLAGS=-version-info @LIB_SONAME@
++libSoundTouch_la_LDFLAGS=-version-info @LIB_SONAME@ -no-undefined
+ 
+ # other linking flags to add
+ # noinst_LTLIBRARIES = libSoundTouchOpt.la
